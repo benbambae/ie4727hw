@@ -1,0 +1,139 @@
+/* ===== Body Styling ===== */
+body {
+    background-color: #F5F5DE; /* Light background color for the entire page */
+    width: 850px; /* Set a fixed width for the body content */
+    margin: 50px auto; /* Center the body horizontally with equal auto margins */
+    box-shadow: 7px 7px 5px black; /* Adds a shadow to the body for depth */
+}
+
+/* ===== Header Styling ===== */
+/* Element selector for header */
+header {
+    background-color: #CDB591; /* Set background color of the header */
+    width: auto; 
+    height: 100px;
+    background-image: url("headerPhoto.png"); /* Adds a background image to the header */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-position: center; /* Centers the background image within the header */
+}
+
+/* ===== Wrapper Styling ===== */
+/* Class selector for wrapper */
+.wrapper {
+    width: auto; /* Wrapper takes up the full width of the parent container */
+    height: auto; /* Wrapper height adjusts to the content */
+    position: relative; /* Position relative to allow for positioning child elements */
+}
+
+/* ===== Navigation Bar Styling ===== */
+.navbar {
+    float: left; 
+    width: 150px; 
+    background-color: #DFD2B4; 
+    height: 100%; /* Navbar height extends to 100% of the parent container */
+    position: absolute; /* Absolute positioning relative to the nearest positioned ancestor */
+}
+
+.content {
+    margin-left: 150px; /* Space on the left to accommodate the navbar */
+    padding: 20px; /* Padding around the content for spacing */
+}
+
+footer {
+    background-color: #CDB591; /* Footer background color */
+    font-size: small; /* Small font size for footer text */
+    font-style: italic; /* Italic style for footer text */
+    text-align: center; /* Center-align the footer text */
+    width: auto; /* Footer takes up the full width of the body */
+    height: 70px; /* Fixed height for the footer */
+    clear: both; /* Ensures footer clears any floated elements */
+}
+
+/* ===== Image Styling ===== */
+/* ID Selector for music image */
+#music_image {
+    float: left; /* Floats the image to the left */
+    padding-right: 40px; /* Adds space to the right of the image */
+    padding-bottom: 20px; /* Adds space below the image */
+    margin-left: 45px; /* Adds space to the left of the image */
+}
+
+/* ID Selector for homepage image */
+#homepage_image {
+    float: left; /* Floats the image to the left */
+    padding-right: 40px; /* Adds space to the right of the image */
+    margin-left: 40px; /* Adds space to the left of the image */
+}
+
+/* ===== Heading Styles ===== */
+h1 {
+    font-weight: bold; /* Bold font weight for the main heading */
+    font-family: Arial, sans-serif; /* Sets the font family */
+    font-size: 24px; /* Large font size */
+    padding-left: 0; /* Removes padding on the left */
+    margin-top: 0; /* Removes default top margin */
+    color: #300402; /* Dark red color for the heading */
+}
+
+h2 {
+    font-weight: bold; /* Bold font weight for subheadings */
+    font-family: Arial, sans-serif; /* Sets the font family */
+    font-size: 18px; /* Medium font size */
+    background-color: #CDB591; /* Background color for the subheading */
+}
+
+/* ===== Audio Player Styling ===== */
+audio {
+    margin-top: 20px; /* Adds space above the audio player */
+}
+
+/* ===== Navigation List Styling ===== */
+nav ul {
+    list-style: none; /* Removes default bullet points from the list */
+}
+
+ul.homepage {
+    list-style-image: url(brownButton.png); /* Custom bullet point image */
+    padding-left: 395px; /* Left padding to align the list */
+}
+
+/* Link Styling */
+nav a {
+    text-decoration: none; /* Removes underline from links */
+    color: #7d5540; /* Brown color for the links */
+    font-weight: bold; /* Bold font weight for links */
+    font-size: large; /* Large font size for links */
+    font-family: Arial, sans-serif; /* Sets the font family for links */
+}
+
+/* ===== Table Styling ===== */
+table {
+    border: none; /* Removes default border from the table */
+    width: 520px; /* Fixed width for the table */
+    border-spacing: 2px; /* Space between table cells */
+    margin-left: 100px; /* Adds space on the left of the table */
+}
+
+/* First row of the table */
+tr:first-of-type {
+    background-color: #FF0000; /* Red background for the first row */
+}
+tr:first-of-type {
+    background-color: #FF0000;
+}
+tr:nth-of-type(odd) {
+    background-color: #CDB591;
+}
+td:nth-child(odd) {
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+input, textarea {
+    margin-top: 10px; /* Adds space above input fields and textareas */
+}
+
+.nowrap-text {
+    white-space: nowrap;
+}

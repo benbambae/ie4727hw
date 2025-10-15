@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaJam Coffee House Menu</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script type="text/javascript" src="scripts/javascript/MenuUpdate.js"></script>
+</head>
+<body>
+<header>
+
+</header>
+<div class="wrapper">
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <h1>Coffee at JavaJam</h1>
+        <table id="menuTable">
+            <tr>
+                <th>Just Java</th>
+                <td class="nowrap-text">
+                    <!-- Describes the "Just Java" coffee -->
+                    Regular house blend, decaffeinated<br>coffee, or flavor of the day. <br>
+                    <!-- Form with a radio button to select the "Just Java" coffee option -->
+                    <form name="regularRadio">
+                        <!-- When the user selects this radio button, it triggers 'calculatePrice(1)' 
+                             to calculate the price for Just Java -->
+                        <label><input class="nowrap-text" type="radio" id="regular" name="regularRadio" checked="checked" onchange="calculatePrice(1)">
+                        Endless cup $2.00</label>
+                    </form>
+                </td>
+                <td>
+                    <!-- This form lets the user enter the quantity of Just Java they want -->
+                    <form onsubmit="return false;">
+                        <!-- When the quantity changes, it triggers 'calculatePrice(1)' to update the price for Just Java -->
+                        <label><input type="number" id="regularQuan" value="0" min="0" style="width:30px;" onchange="calculatePrice(1)"></label>
+                    </form>
+                </td>
+                <td style="width:120px;">
+                    <!-- This is where the subtotal for Just Java is displayed after calculation -->
+                    <p>Subtotal: $<span id="regularTotal"></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Cafe au Lait</td>
+                <td>
+                    <!-- Describes the "Cafe au Lait" coffee and lets the user choose between single or double -->
+                    House blended coffee infused into a smooth, steamed milk.<br>
+                    <form name="radioCafe" id="radioCafe" style="display: flex; align-items: center;">
+                        <!-- If the user selects "Single", the price will be $2.00 -->
+                        <label style="margin-right: 10px;"><input type="radio" id="cafeLow" checked="checked" name="radioCafe" onchange="calculatePrice(2)"> Single $2.00</label>
+                        <!-- If the user selects "Double", the price will be $3.00 -->
+                        <label><input type="radio" id="cafeHigh" name="radioCafe" onchange="calculatePrice(2)"> Double $3.00</label>
+                    </form>
+                </td>
+                <td>
+                    <!-- This form lets the user enter the quantity of Cafe au Lait they want -->
+                    <form onsubmit="return false;">
+                        <!-- When the quantity changes, it triggers 'calculatePrice(2)' to update the price for Cafe au Lait -->
+                        <label><input type="number" id="cafeQuan" value="0" style="width:30px;" min="0" onchange="calculatePrice(2)"></label>
+                    </form>
+                </td>
+                <td style="width:120px;">
+                    <!-- This is where the subtotal for Cafe au Lait is displayed after calculation -->
+                    <p>Subtotal: $<span id="cafeTotal"></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Iced Cappuccino</td>
+                <td>
+                    <!-- Describes the "Iced Cappuccino" coffee and lets the user choose between single or double -->
+                    Sweetened espresso blended with icy-cold milk and served in a chilled glass<br>
+                    <form name="radioCappuccino">
+                        <!-- If the user selects "Single", the price will be $4.75 -->
+                        <label><input type="radio" id="cappuccinoLow" checked="checked" name="radioCappuccino" onchange="calculatePrice(3)"> Single $4.75</label>
+                        <!-- If the user selects "Double", the price will be $5.75 -->
+                        <label><input type="radio" id="cappuccinoHigh" name="radioCappuccino" onchange="calculatePrice(3)"> Double $5.75</label>
+                    </form>
+                </td>
+                <td>
+                    <!-- This form lets the user enter the quantity of Iced Cappuccino they want -->
+                    <form onsubmit="return false;">
+                        <!-- When the quantity changes, it triggers 'calculatePrice(3)' to update the price for Iced Cappuccino -->
+                        <label><input type="number" id="cappuccinoQuan" value="0" style="width:30px;" min="0" onchange="calculatePrice(3)"></label>
+                    </form>
+                </td>
+                <td style="width:120px;">
+                    <!-- This is where the subtotal for Iced Cappuccino is displayed after calculation -->
+                    <p>Subtotal: $<span id="cappuccinoTotal"></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td>
+                <td style="width:120px;">
+                    <!-- This is where the total price of all coffee selections is displayed after calculating all subtotals -->
+                    <p>Total: $<span id="totalPrice"></span></p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<footer>
+    <br>Copyright &copy; 2024 JavaJam Coffee House<br>
+    <a href="mailto:benjaminwenlong@lee.com" style="color: brown;">benjaminwenlong@lee.com</a>
+</footer>
+</div>
+</body>
+</html>
